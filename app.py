@@ -18,19 +18,10 @@ if uploaded_file is not None:
     #provide an option to analyze data on group level or specific user
     #fetch unique users
     user_list = df['user'].unique().tolist()
-    # Ensure 'user' column exists
-    if 'user' in df.columns:
-        user_list = df['user'].dropna().unique().tolist()  # Remove NaN values safely
-        if 'group_notification' in user_list:
-            user_list.remove('group_notification')
-        user_list.sort()
-        user_list.insert(0, 'Overall')
-    else:
-        user_list = ['Overall']  # Default value if no users found
-
-    selected_user = st.sidebar.selectbox("Show analysis wrt", user_list)
-
-    
+    user_list.remove('group_notification')
+    user_list.sort()
+    user_list.insert(0, 'Overall')
+    selected_user = st.sidebar.selectbox("Show analysis wrt",user_list)
     #button to analyze chat
     if(st.sidebar.button("Show Analysis")):
         #Display basic stats in 4 cols
