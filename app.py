@@ -3,7 +3,7 @@ import preprocessor, helper #local file func
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-st.sidebar.title("WhatsApp Chat Analyzer")
+st.sidebar.title("WhatsApp Chat Miner")
 
 #create a file uploaded to upload txt file
 uploaded_file = st.sidebar.file_uploader("Choose a file")
