@@ -1,7 +1,3 @@
-Great — I went through your project files (`app.py`, `helper.py`, `preprocessor.py`, `requirements.txt`, and `stop_hinglish.txt`) and the Streamlit app link. Here’s a **README.md** file you can use for your project:
-
----
-
 # 📊 WhatsApp Chat Analyzer
 
 A **Streamlit web app** to analyze WhatsApp chat exports. It generates insights, statistics, and visualizations such as message counts, timelines, word clouds, most active users, and emoji usage.
